@@ -24,4 +24,4 @@ jobs:
                 sleep 30
             - name: Start Locust Tests
               run:
-                locust -f locustfile.py --headless -u 10000 -r 100 --run-time 2m
+                locust -f locustfile.py --headless -u 10000 -r 100 --run-time 2m --host=http://localhost:5000
